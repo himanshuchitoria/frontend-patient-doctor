@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 1 rem;
+  font-size: 0.6rem;
   margin: 0;
   gap: 12px;
 }
@@ -374,4 +374,5 @@
     padding: 0 0.3rem;
   }
 }
+
 
