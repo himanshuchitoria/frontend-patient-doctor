@@ -1,0 +1,15 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow:
+
+# Recommended: link to your sitemap for faster indexing
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Good practice: block access to sensitive or irrelevant paths (customize if needed)
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /api/
+Disallow: /node_modules/
+
+# (Optional) Mention crawl delay for slow servers (remove if not needed)
+# Crawl-delay: 2

@@ -1,0 +1,164 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/2531709/pexels-photo-2531709.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-top-image {
+  width: 150px;            /* Adjust width as needed */
+  height: auto;
+  margin-bottom: 2rem;     /* Space between image and card */
+    /* Optional: rounded corners */
+  box-shadow: 0 8px 24px rgba(44,55,80,0.18); /* Soft drop shadow */
+  background: transparent;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  color: #4c51bf;
+  background: linear-gradient(135deg,transparent(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.05) 0%);
+}
+
+.login-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: whitesmoke;
+  font-family:cursive;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  display: block;
+  color: whitesmoke;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: #f56565;
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-width: 2px 0 0 0;
+  border-bottom-width: 2px;
+  border-color: #4c51bf;
+  outline: none;
+  border-style: solid;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #5a67d8;
+}
+
+.role-selection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.role-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.25rem;
+  align-items: center;
+}
+
+.role-label {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #b1aae0;
+  cursor: pointer;
+}
+
+.role-radio {
+  margin-right: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.role-text {
+  margin-top: -0.5rem;
+}
+
+.submit-button-container {
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #4c51bf;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.submit-button:hover {
+  background-color: #434190;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  background-color: #3c366b;
+}
+
+.submit-button:focus {
+  box-shadow: 0 0 0 3px #5a67d8;
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.register-link {
+  margin-top: 1rem;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.register-anchor {
+  color: #b1aae0;
+  font-weight: 700;
+  margin-left: 0.25rem;
+  text-decoration: none;
+}
+
+.register-anchor:hover {
+  text-decoration: underline;
+}
