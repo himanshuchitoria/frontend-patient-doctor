@@ -40,13 +40,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .header-title-theme {
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1 rem;
   margin: 0;
   gap: 12px;
 }
@@ -373,3 +374,4 @@
     padding: 0 0.3rem;
   }
 }
+
