@@ -3,7 +3,7 @@ User-agent: *
 Disallow:
 
 # Recommended: link to your sitemap for faster indexing
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://reformmehealthcare.vercel.app/sitemap.xml
 
 # Good practice: block access to sensitive or irrelevant paths (customize if needed)
 Disallow: /admin/
