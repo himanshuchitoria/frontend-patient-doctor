@@ -1,0 +1,210 @@
+/* Adapted to your attached theme - clean, pastel cyan, pill buttons, bolder font, shadowed login block, logo INSIDE login card bottom, big rounded img top */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #bcf0ed;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #bcf0ed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* LOGIN BOX (the card) */
+.login-box {
+  background: #e4f6fa;
+  border-radius: 2rem 2rem 2.5rem 2.5rem;
+  box-shadow: 0 7px 28px 0 rgba(54,51,97,0.08), 0 1.5px 8px rgba(90,180,222,0.06);
+  width: 80%;
+ 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.login-title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.24rem;
+  color: #181b22;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 1.33rem;
+}
+
+/* LABELS & INPUTS */
+.input-label {
+  display: block;
+  color: #36a4af;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.39rem;
+  letter-spacing: 0.04em;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+.required {
+  color: #db2e4a;
+}
+.input-field {
+  width: 100%;
+  border-radius: 13px;
+  padding: 0.58rem 0.88rem;
+  border: 2.3px solid #71d6ce;
+  background: #fafdff;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #1b1a29;
+  margin-top: 0.13rem;
+  transition: border .18s, box-shadow .18s;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #17bac6;
+  box-shadow: 0 0 0 2px #59e5e3;
+}
+
+/* ROLE SELECTION */
+.role-selection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+  width: 100%;
+}
+.role-options {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.role-label {
+  color: #298291;
+  font-size: 0.96rem;
+  font-weight: 700;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.role-radio {
+  accent-color: #7bd7be;
+  margin-right: 0.45rem;
+}
+
+/* SUBMIT BUTTONS */
+.submit-button-container {
+  width: 100%;
+  margin-top: 0.3rem;
+}
+.submit-button {
+  width: 100%;
+  background: linear-gradient(92deg, #33def3 50%, #14bad2 100%);
+  color: #181b22;
+  font-weight: 900;
+  padding: 0.88rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1.15rem;
+  border: none;
+  outline: none;
+  margin-top: .15rem;
+  margin-bottom: .5rem;
+  letter-spacing: .05em;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(55,205,160,0.11);
+  transition: background 0.19s, color 0.14s, transform 0.18s;
+}
+
+.submit-button:hover {
+  background: linear-gradient(92deg, #13cae4 50%, #009aa3 100%);
+  color: #053642;
+  transform:translateY(-1px) scale(1.03);
+}
+
+.submit-button:active {
+  background: #08cddb;
+}
+
+.submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Register link */
+.register-link {
+  margin-top: .97rem;
+  text-align: center;
+  color: #1f234a;
+  font-weight: 500;
+}
+.register-anchor {
+  color: #0992d2;
+  font-weight: 900;
+  margin-left: 0.15rem;
+  text-decoration: none;
+}
+.register-anchor:hover {
+  text-decoration: underline;
+}
+
+/* LOGO INSIDE CARD BOTTOM + IMAGE TOP */
+.login-logo-wrap {
+  margin-top: 2.1rem;
+  display: flex;
+  justify-content: center;
+}
+.login-logo-img {
+  border-radius: 0 0 48px 48px;
+  background: #d2fbff;
+  width: 110px;
+  max-width: 50%;
+  box-shadow: 0 4px 22px 0 rgba(87,199,204,.14);
+  padding: 15px 14px 14px 14px;
+  object-fit: contain;
+  display: block;
+}
+
+/* TOP IMAGE for login - now part of .login-logo-wrap */
+.login-top-image {
+  width: 500px;
+  height: 200px;
+  
+  object-fit: cover;
+  margin-bottom: 1.1rem;
+  border-radius: 32px;
+  box-shadow: 0 8px 18px rgba(45,55,90,0.10);
+  background: transparent;
+  border: 2px solid #cceeef;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 500px) {
+  .login-box {
+    max-width: 98vw;
+    padding: 1.2rem 0.45rem 1.1rem 0.45rem;
+  }
+}
