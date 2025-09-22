@@ -1,0 +1,432 @@
+/* Font and Base Colors (match image) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body,
+html,
+#root,
+.physionews-root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #e8e6fa;
+  color: #22223d;
+  letter-spacing: 0.02em;
+  scroll-behavior: smooth;
+}
+
+/* Header Brand Top Bar */
+.psn-brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8e6fa;
+  padding: 19px 17px 4px;
+  font-size: 2rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid #beb3f4;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  
+}
+
+.psn-logo {
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #161729;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.psn-menu {
+
+  font-size: 1.2rem;
+}
+
+/* Horizontal tabs below header */
+.psn-tabs {
+  display: flex;
+  justify-content: space-between;
+  background: #e8e6fa;
+  
+    padding: 10px 12px 8px;
+  align-items: center;
+  border-bottom: 2px solid #beb3f4;
+}
+.psn-tab {
+  padding: 6px 10px 5px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #a1a1c0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: #e8e6fa;
+  font-size: 1.02rem;
+  border-bottom: 3px solid transparent;
+  margin: 0 2px;
+  letter-spacing: 0.05em;
+  transition: color 0.16s, border-bottom 0.19s;
+}
+.psn-tab.active,
+.psn-tab:hover {
+  color: #23223c;
+  
+  
+}
+
+.psn-section {
+  padding: 19px 13px 34px;
+  margin: 0 auto;
+}
+
+.psn-blogs-section,
+.psn-reformme-section,
+.psn-monika-section {
+  background: #f4f3fd;
+  border-radius: 13px;
+}
+
+/* Blog Section Design */
+.psn-headline {
+  color: #14b555;
+  font-weight: 800;
+  font-size: 0.96rem;
+  margin: 0 0 16px 2px;
+  letter-spacing: 1.2px;
+}
+
+.psn-blog-main {
+  background: #ded4fa;
+  border-radius: 18px;
+  padding: 15px 10px 18px 17px;
+  box-shadow: 0 7px 23px rgb(80 72 180 / 0.10);
+  margin-bottom: 19px;
+  user-select: text;
+  border: 1.6px solid #c3bbf2;
+}
+.psn-blog-main h2 {
+  font-size: 1.18rem;
+  font-weight: 900;
+  margin-bottom: 11px;
+  color: #27223d;
+  border-left: 4px solid #23223c;
+  padding-left: 13px;
+  letter-spacing: 0.9px;
+  margin-top: 0;
+}
+.psn-img-main-wrap img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgb(67 54 164 / 0.15);
+  border: 1px solid #b3bed4;
+}
+.psn-blog-desc {
+  font-size: 1.02rem;
+  margin-bottom: 13px;
+  color: #4923a7;
+  line-height: 1.48;
+}
+.psn-blog-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #656582;
+  font-size: 0.83rem;
+  font-weight: 600;
+  align-items: center;
+}
+.psn-blog-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Side cards (below headline main blog) */
+.psn-blogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.psn-blog-sidecard {
+  background: #edeafd;
+  border-radius: 11px;
+  box-shadow: 0 3px 9px rgb(107 123 245 / 0.13);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 8px 8px 11px;
+  text-decoration: none;
+  color: #23223c;
+  position: relative;
+  transition: background 0.17s;
+  margin-top: 2px;
+}
+.psn-blog-sidecard:hover {
+  background: #e0dbf8;
+}
+.psn-blog-sidecard img {
+  width: 62px;
+  height: 49px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 7px rgb(107 123 245 / 0.10);
+}
+.psn-card-label {
+  color: #14b555;
+  font-weight: bold;
+  font-size: 0.77rem;
+  margin-bottom: 4px;
+  letter-spacing: 1.2px;
+  display: block;
+}
+.psn-card-title {
+  color: #312c4f;
+  font-weight: 700;
+  font-size: 1.01rem;
+  display: block;
+}
+.psn-card-meta {
+  color: #686478;
+  font-size: 0.74rem;
+  margin-top: 1px;
+  display: flex;
+  gap: 13px;
+}
+.psn-cta-arrow {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #361ff4;
+  font-size: 1.08rem;
+}
+
+.psn-blogs-break {
+  border: none;
+  border-top: 1.7px solid #d5cfef;
+  margin: 25px 5% 4px 5%;
+}
+
+
+
+.psn-docblogs-cap {
+  font-weight: 900;
+  font-size: 1.05rem;
+  color: #23223c;
+  margin: 16px 0 9px 4px;
+  border-left: 3px solid #361ff4;
+  padding-left: 10px;
+  letter-spacing: 1.2px;
+  
+}
+
+.psn-docblogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.psn-empty-blk {
+  padding: 14px;
+  background: #eae7fa;
+  color: #625fc8;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.psn-docblog-card {
+  background: #f5f1fd;
+  border: 1.2px solid #ccbaf5;
+  border-radius: 13px;
+  box-shadow: 0 2px 8px rgb(151 143 201 / 0.08);
+  padding: 13px 15px;
+  user-select: text;
+  position: relative;
+overflow-wrap: break-word;    /* Break long words when needed */
+  word-break: break-word;       /* Additional support for breaking long words */
+
+  max-width: 100%;              /* Ensure it doesn’t expand outside container */
+}
+.psn-docblog-content {
+  margin-bottom: 8px;
+}
+.psn-docblog-heading {
+  font-weight: 900;
+  font-size: 1.08rem;
+  margin-bottom: 7px;
+  color: #2c246d;
+  padding-right: 30px;
+}
+.psn-docblog-imgwrap {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.psn-docblog-img {
+  max-width: 100%;
+  max-height: 110px;
+  border-radius: 7px;
+  object-fit: cover;
+  box-shadow: 0 0 14px rgb(107 123 245 / 0.13);
+  border: 1px solid #b3bed4;
+}
+.psn-docblog-body {
+  color: #333;
+  font-size: 0.99rem;
+  margin-bottom: 2px;
+}
+.psn-docblog-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #7257ce;
+  font-size: 0.74rem;
+  align-items: center;
+}
+.psn-docblog-author {
+  font-weight: 700;
+}
+.psn-docblog-created {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* ReformMe Section */
+.psn-reformme-section {
+  margin-top: 19px;
+}
+.psn-section-title {
+  font-size: 1.09rem;
+  font-weight: 700;
+  color: #292149;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 13px;
+  border-left: 2.9px solid #14b555;
+  padding-left: 11px;
+}
+.psn-reformme-img img {
+  width: 100%;
+  max-width: 285px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 11px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 18px rgb(107 123 245 / 0.19);
+  border: 1.2px solid #b7d6be;
+}
+.psn-reformme-details h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+.psn-reformme-details {
+  color: #28253e;
+  font-size: 0.93rem;
+  margin-bottom: 7px;
+}
+.psn-reformme-details ul {
+  margin-left: 19px;
+  margin-top: 7px;
+  color: #4b2f83;
+}
+.psn-highlight {
+  margin-top: 8px;
+  color: #14b555;
+  font-weight: 650;
+  font-size: 1.02rem;
+}
+
+/* Monika Section */
+.psn-monika-section {
+  margin-top: 16px;
+}
+.psn-monika-img img {
+  width: 100%;
+  max-width: 158px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 11px;
+  margin-bottom: 6px;
+  box-shadow: 0 3px 12px rgb(65 107 245 / 0.15);
+  border: 1px solid #bfc3ff;
+}
+.psn-monika-details h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+.psn-monika-details {
+  color: #28253e;
+  font-size: 0.93rem;
+  margin-bottom: 100px;
+
+}
+.psn-monika-details ul {
+  margin-left: 19px;
+  margin-top: 7px;
+  color: #685fae;
+}
+
+/* Footer Fix */
+.psn-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ded9fa;
+  border-top: 2px solid #beb3f4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  z-index: 10001;
+  padding-top: 10px;
+}
+
+.psn-footer-btn {
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #371b84;
+  font-size: 0.97rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+.psn-footer-btn svg {
+  font-size: 1.24rem;
+  margin-bottom: 1px;
+}
+.psn-footer-btn-active {
+  color: #371b84;
+  font-weight: 900;
+  
+}
+.psn-footer-btn-active svg {
+  color: #371b84;
+}
+
+@media (min-width: 480px) {
+  .physionews-root,
+  .psn-section {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 340px) {
+  .psn-section {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+/* Utility for font weight */
+strong, b {
+  font-weight: 900 !important;
+}
