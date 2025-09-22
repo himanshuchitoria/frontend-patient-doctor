@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+.registration-container {
+  position: relative;
+  padding: 2.5rem;
+  background: #bcf0ed; /* pastel cyan background */
+  min-height: 100vh;
+  width: 100vw;
+  /* Important: remove height 100vh to allow scroll, use min-height for full screen */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* align top so page scrolls naturally */
+  overflow-x: hidden; /* hide horizontal scroll if any */
+  overflow-y: auto; /* allow vertical scroll */
+  box-sizing: border-box;
+}
+
+.registration-card {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.90);
+  border-radius: 2rem 2rem 2.5rem 2.5rem;
+  box-shadow: 0 7px 28px 0 rgba(54, 51, 97, 0.08),
+    0 1.5px 8px rgba(90, 180, 222, 0.06);
+  max-width: 768px;
+  width: 100%;
+  margin: 2rem auto; /* add margin top/bottom for spacing */
+  padding: 2rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.registration-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #298291;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 1.3rem;
+  width: 100%;
+}
+
+.input-label {
+  display: block;
+  color: #36a4af;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.04em;
+  cursor: default;
+}
+
+.required {
+  color: #db2e4a;
+}
+
+.input-field,
+.select-field,
+.textarea-field {
+  width: 100%;
+  border-radius: 13px;
+  padding: 0.6rem 0.9rem;
+  border: 2.3px solid #71d6ce;
+  background: #fafdff;
+  font-size: 1rem;
+  color: #1b1a29;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  transition: border 0.18s, box-shadow 0.18s;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.input-field:focus,
+.select-field:focus,
+.textarea-field:focus {
+  border-color: #17bac6;
+  box-shadow: 0 0 0 2px #59e5e3;
+}
+
+.role-selection {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.role-label {
+  color: #298291;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.role-radio {
+  accent-color: #7bd7be;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Grid for fields */
+.grid-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+.submit-button-container {
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+.submit-button {
+  width: 100%;
+  background: linear-gradient(92deg, #33def3 50%, #14bad2 100%);
+  color: #181b22;
+  font-weight: 900;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1.15rem;
+  border: none;
+  outline: none;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(55, 205, 160, 0.11);
+  transition: background 0.19s, color 0.14s, transform 0.18s;
+}
+
+.submit-button:hover {
+  background: linear-gradient(92deg, #13cae4 50%, #009aa3 100%);
+  color: #053642;
+  transform: translateY(-1px) scale(1.03);
+}
+
+.submit-button:active {
+  background: #08cddb;
+}
+
+.submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.already-registered {
+  margin-top: 1.2rem;
+  text-align: center;
+  color: #1f234a;
+  font-weight: 500;
+}
+
+.already-registered a {
+  color: #0992d2;
+  font-weight: 900;
+  margin-left: 0.15rem;
+  text-decoration: none;
+}
+
+.already-registered a:hover {
+  text-decoration: underline;
+}
+
+.text-black{
+    color: black !important;
+}
+.text-white{
+    color: black !important;
+}
+
+.btn-submit{
+    background: linear-gradient(92deg, #33def3 50%, #14bad2 100%);
+    border-radius: 20px;
+    color: rgb(5, 5, 5);
+    height: 50px;
+    width: 300px;
+    
+}
