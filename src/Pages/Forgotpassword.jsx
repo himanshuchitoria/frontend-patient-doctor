@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8080/patientauth/forgot-password", { email });
+      const response = await axios.post("https://backend-dashboard-v3o0.onrender.com/patientauth/forgot-password", { email });
       if (response.data.status) {
         toast.success("OTP sent to your email!");
         setStep(2);
@@ -34,7 +34,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8080/patientauth/reset-password", {
+      const response = await axios.post("https://backend-dashboard-v3o0.onrender.com/patientauth/reset-password", {
         email,
         otp,
         newPassword,
@@ -109,3 +109,4 @@ const ForgotPassword = () => {
 };
 
 export default ForgotPassword;
+
