@@ -308,7 +308,7 @@ overflow-wrap: break-word;    /* Break long words when needed */
 .psn-reformme-img img {
   width: 100%;
   max-width: 285px;
-  height: 110px;
+  height: 150px;
   object-fit: cover;
   border-radius: 11px;
   margin-bottom: 8px;
@@ -429,4 +429,10 @@ overflow-wrap: break-word;    /* Break long words when needed */
 /* Utility for font weight */
 strong, b {
   font-weight: 900 !important;
+}
+
+.medicine-vid{
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
