@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import "./visible.css";
+import Medicine from "../static/medicine.mp4";
 
 // 3 curated top physiotherapy blogs (external, with links)
 const featuredBlogs = [
@@ -184,7 +185,11 @@ const Visible = () => {
                     </div>
                     {b.image && (
                       <div className="psn-docblog-imgwrap">
-                        <img src={b.image} alt={b.headTitle} className="psn-docblog-img" />
+                        <video className="medicine-vid" controls autoPlay muted loop src={Medicine} type="video/mp4" />
+
+
+                        
+
                       </div>
                     )}
                     <div className="psn-docblog-body">{b.body }</div>
@@ -210,7 +215,7 @@ const Visible = () => {
         </div>
         <div className="psn-reformme-img">
           <img
-            src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=750&q=80"
+            src="https://lh3.googleusercontent.com/eRQX7XFUL3Fp_LSgfMcKbS_Lrhkg2rKX1u3dV_4GJ8cICQ25YxFIe2MAeLep-GbP_2c3HOt34IknxUri=s265-w265-h265"
             alt="ReformMe Health Care Clinic"
           />
         </div>
